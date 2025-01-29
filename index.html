@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Confession</title>
+    <style>
+        body {
+            background-color: #ffebee;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background: white;
+            width: 350px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            margin: auto;
+        }
+        h2 {
+            color: #d81b60;
+        }
+        .btn {
+            background: #d81b60;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background: #ad1457;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #880e4f;
+            font-weight: bold;
+            display: none;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+            text-align: left;
+            padding: 10px;
+            border-left: 3px solid #d81b60;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>hi aira i have something to tell you</h2>
+        <button class="btn" onclick="revealConfession()">Click to Read</button>
+        <p class="message" id="confessionMessage">
+            I have been holding this in for a long time, and I think it’s finally time to say it.  
+            Every time I see you, my heart races, and I can't help but smile. You're the first thing on my mind when I wake up 
+            and the last thought before I sleep. Your kindness, your laughter, and the way you make everything feel special—it's all amazing to me.  
+            I was always afraid of saying this because I didn't want to ruin what we have, but I realize now that honesty is the best way forward.  
+            So, here it is: *I like you, more than just a friend.* I don’t expect anything in return, I just wanted you to know.  
+            No matter what happens, you will always be special to me. ❤️
+        </p>
+    </div>
+
+    <script>
+        function revealConfession() {
+            let messageElement = document.getElementById("confessionMessage");
+            messageElement.style.display = "block";
+            setTimeout(() => {
+                messageElement.style.opacity = "1";
+            }, 100);
+        }
+    </script>
+
+</body>
+</html>
